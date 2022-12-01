@@ -6,8 +6,8 @@ export default function useRandomMeal() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const { data } = await getRandomMeal()
-      setRandomMeal(data.meals[0])
+      const { meal } = await getRandomMeal()
+      setRandomMeal(meal)
     }
     fetchData()
   }, [])
