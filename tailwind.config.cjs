@@ -20,6 +20,9 @@ module.exports = {
           900: '#723811',
         },
       },
+      gridTemplateColumns: {
+        list: 'repeat(auto-fill, minmax(400px,1fr))',
+      },
     },
     fontFamily: {
       lifesavers: ['Life Savers'],

@@ -1,5 +1,14 @@
+import MealCard from './MealCard'
+
 export default function ListOfMeals({ meals }) {
   return (
-    <ul>{meals && meals.map((meal) => <li key={meal.id}>{meal.name}</li>)}</ul>
+    <ul className='grid grid-cols-list gap-4'>
+      {meals &&
+        meals.map((meal) => (
+          <li key={meal.id}>
+            <MealCard meal={meal} />
+          </li>
+        ))}
+    </ul>
   )
 }

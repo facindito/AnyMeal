@@ -29,15 +29,15 @@ function App() {
           <aside className='p-4'>
             <h2 className='font-lifesavers font-bold text-2xl'>Recipes</h2>
           </aside>
-          <section className='flex-1 p-4'>
-            <header className='flex gap-4 justify-between items-center px-4'>
+          <section className='flex flex-col flex-1 gap-4 p-4'>
+            <header className='flex gap-4 justify-between items-center'>
               <SearchForm onSubmit={handleSubmit} className='' />
               <button className='px-4 py-2 bg-white rounded-full'>
                 Sort by:
               </button>
             </header>
             <ListOfMeals meals={meals} />
-            {randomMeal && <MealCard meal={randomMeal} />}
+            {randomMeal && !meals && <MealCard meal={randomMeal} />}
           </section>
         </section>
       </div>
