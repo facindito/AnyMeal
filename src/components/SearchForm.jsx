@@ -21,7 +21,7 @@ export default function SearchForm({ onSubmit }) {
         <input
           type='search'
           placeholder='search any meal...'
-          className='p-2 border rounded-full pl-10 outline-none border-green-600 focus:ring-green-600 focus:ring-1'
+          className='p-2 border rounded-full pl-10 outline-none border-yellow-600 focus:ring-yellow-600 focus:ring-1'
           onChange={handleChange}
         />
       </div>
