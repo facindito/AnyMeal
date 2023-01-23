@@ -11,7 +11,7 @@ export default function SearchForm({ onSubmit }) {
     setSearch(e.target.value)
   }
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className=''>
       <div className='relative w-full'>
         <div className='absolute h-full left-0 p-2 flex items-center'>
           <svg xmlns='http://www.w3.org/2000/svg' height='24' width='24'>

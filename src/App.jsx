@@ -18,26 +18,26 @@ function App() {
   })
 
   return (
-    <main className='min-h-screen'>
+    <main className='min-h-screen bg-yellow-100'>
       <Header />
       {/* {randomMeal && <Meal meal={randomMeal} />} */}
-      <section className='bg-yellow-400'>
+      <section className='bg-yellow-200 rounded-b-3xl mb-8'>
         <Hero />
       </section>
       <div className='bg-yellow-100'>
-        <section className='flex gap-4 max-w-5xl mx-auto p-4'>
-          <aside className='p-4'>
+        <section className='flex gap-4 max-w-5xl mx-auto'>
+          <aside className='p-4 hidden md:flex'>
             <h2 className='font-lifesavers font-bold text-2xl'>Recipes</h2>
           </aside>
-          <section className='flex flex-col flex-1 gap-4 p-4'>
-            <header className='flex gap-4 justify-between items-center'>
+          <section className='flex flex-col flex-1 gap-4 p-4 overflow-hidden'>
+            <header className='flex flex-col md:flex-row gap-4 justify-between items-start md:items-center'>
               <SearchForm onSubmit={handleSubmit} className='' />
               <button className='px-4 py-2 bg-white rounded-full'>
                 Sort by:
               </button>
             </header>
             <ListOfMeals meals={meals} />
-            {randomMeal && !meals && <MealCard meal={randomMeal} />}
+            {randomMeal && !meals && <Meal meal={randomMeal} />}
           </section>
         </section>
       </div>

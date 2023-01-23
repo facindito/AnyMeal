@@ -14,7 +14,7 @@ export default function MealCard({ meal }) {
           <ul className='flex'>
             <label
               htmlFor='area'
-              className='category border-r border-green-600 px-4 text-xs'
+              className='category border-r border-yellow-200 px-4 text-xs'
             >
               Area
               <li className='area font-bold text-base'>{meal.area}</li>

@@ -1,7 +1,7 @@
 export default function Meal({ meal }) {
   return (
-    <article className='flex flex-col gap-4 max-w-5xl mx-auto p-4'>
-      <h1 className='text-2xl font-bold text-center md:text-6xl'>
+    <article className='flex flex-col gap-4 max-w-5xl mx-auto p-4 bg-white rounded-md'>
+      <h1 className='text-3xl font-bold text-center md:text-5xl font-lifesavers'>
         {meal.name}
       </h1>
       <div className='flex flex-col justify-center items-center gap-4 md:flex-row'>
@@ -14,7 +14,7 @@ export default function Meal({ meal }) {
         </section>
         <section className='mr-auto md:mb-auto'>
           <h2 className='mb-4 text-xl font-bold'>Ingredients</h2>
-          <ul className='md:columns-2 accent-green-600'>
+          <ul className='md:columns-2 accent-yellow-600'>
             {Array.from({ length: meal.cantIngredients }, (_, i) => {
               return (
                 <li key={i} className='flex gap-2'>
@@ -25,7 +25,7 @@ export default function Meal({ meal }) {
                   />
                   <label
                     htmlFor={`${meal.ingredients[i]}`}
-                    className='peer-checked/check:line-through decoration-green-600'
+                    className='peer-checked/check:line-through decoration-yellow-600'
                   >
                     {meal.measure && (
                       <span className='font-bold'>{`${meal.measure[i]} `}</span>
@@ -38,7 +38,7 @@ export default function Meal({ meal }) {
           </ul>
         </section>
       </div>
-      <section className='bg-slate-100 rounded-md p-4'>
+      <section className='p-4'>
         <h2 className='mb-4 text-xl font-bold'>Instructions</h2>
         <p className='whitespace-pre-wrap'>{meal.instructions}</p>
       </section>

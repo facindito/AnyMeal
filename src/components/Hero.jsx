@@ -7,7 +7,7 @@ export default function Hero() {
       <img
         src='./img/Male-chef-cooking-in-kitchen.svg'
         alt='Chef'
-        className='aspect-video object-cover overflow-hidden'
+        className='aspect-video object-cover overflow-hidden '
       />
     </section>
   )
