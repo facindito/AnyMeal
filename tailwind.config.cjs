@@ -21,7 +21,7 @@ module.exports = {
         },
       },
       gridTemplateColumns: {
-        list: 'repeat(auto-fill, minmax(400px,1fr))',
+        list: 'repeat(auto-fit, minmax(300px,1fr))',
       },
     },
     fontFamily: {

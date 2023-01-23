@@ -1,7 +1,7 @@
 export default function MealCard({ meal }) {
   return (
     <article className='flex flex-col gap-4 max-w-5xl mx-auto'>
-      <div className='flex flex-col justify-center items-center gap-4 md:flex-row bg-white p-4 rounded-md'>
+      <div className='flex flex-col justify-start items-center gap-4 lg:flex-row bg-white p-4 rounded-md'>
         <picture className='h-40 rounded-md overflow-hidden'>
           <img
             className='object-cover w-full h-full'
