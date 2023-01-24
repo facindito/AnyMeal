@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import MealCard from './MealCard'
 
 export default function ListOfMeals({ meals }) {
@@ -6,7 +7,9 @@ export default function ListOfMeals({ meals }) {
       {meals &&
         meals.map((meal) => (
           <li key={meal.id} className=''>
-            <MealCard meal={meal} />
+            <Link to={`/recipe/${meal.id}`}>
+              <MealCard meal={meal} />
+            </Link>
           </li>
         ))}
     </ul>

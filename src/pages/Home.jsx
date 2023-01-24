@@ -1,12 +1,12 @@
 import { useCallback, useState } from 'react'
-import Hero from './components/Hero'
-import ListOfMeals from './components/ListOfMeals'
-import Meal from './components/meal'
-import SearchForm from './components/SearchForm'
-import useMeals from './hooks/useMeals'
-import useRandomMeal from './hooks/useRandomMeal'
+import Hero from '../components/Hero'
+import ListOfMeals from '../components/ListOfMeals'
+import Meal from '../components/meal'
+import SearchForm from '../components/SearchForm'
+import useMeals from '../hooks/useMeals'
+import useRandomMeal from '../hooks/useRandomMeal'
 
-function App() {
+export default function Home() {
   const [keyword, setKeyword] = useState(null)
   const { randomMeal } = useRandomMeal()
   const { meals } = useMeals({ keyword })
@@ -40,5 +40,3 @@ function App() {
     </>
   )
 }
-
-export default App
