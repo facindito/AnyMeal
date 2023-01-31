@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <>
-      <section className='bg-yellow-200 rounded-b-3xl mb-8'>
+      <section className='bg-yellow-200 mb-8'>
         <Hero />
       </section>
       <div className='bg-yellow-100'>
