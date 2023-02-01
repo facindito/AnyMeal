@@ -1,10 +1,13 @@
 import { useParams } from 'react-router-dom'
+import Meal from '../components/meal'
+import useMealbById from '../hooks/useMealbById'
 
 export default function Recipe() {
   const { id } = useParams()
+  const { meal } = useMealbById({ id })
   return (
-    <main className='grid place-content-center min-h-screen'>
-      <h1 className='font-lifesavers font-extrabold text-2xl'>Recipe:{id}</h1>
+    <main className='min-h-screen bg-white p-4 w-full'>
+      {meal && <Meal meal={meal.meal} />}
     </main>
   )
 }

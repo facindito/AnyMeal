@@ -7,7 +7,7 @@ import useMeals from '../hooks/useMeals'
 import useRandomMeal from '../hooks/useRandomMeal'
 
 export default function Home() {
-  const [keyword, setKeyword] = useState(null)
+  const [keyword, setKeyword] = useState()
   const { randomMeal } = useRandomMeal()
   const { meals } = useMeals({ keyword })
 
