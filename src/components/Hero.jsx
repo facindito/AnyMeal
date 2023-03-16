@@ -1,9 +1,18 @@
 export default function Hero() {
   return (
-    <section className='flex flex-col md:justify-center items-center gap-4 bg-inherit max-w-5xl mx-auto p-4 md:flex-row sm:min-h-screen'>
-      <h1 className='font-lifesavers font-extrabold text-3xl text-center max-w-[75ch] md:text-5xl md:text-left'>
-        {'All your\nfavorite meals\nin one place'}
-      </h1>
+    <section className='min-h-screen px-4 flex flex-col-reverse justify-center items-center gap-4 md:justify-between md:flex-row '>
+      <div className='flex flex-col items-center gap-4 md:items-start'>
+        <h1 className='font-bold text-3xl text-center max-w-[50ch] md:text-4xl md:text-left'>
+          All your favorite meals in one place
+        </h1>
+        <a
+          href='#list'
+          className='py-2 px-4 mt-4 bg-yellow-400 rounded-full w-fit text-yellow-900 font-semibold'
+        >
+          See Meals <span className='animate-bounce'>↓</span>
+        </a>
+      </div>
+
       <img
         src='./img/Male-chef-cooking-in-kitchen.svg'
         alt='Chef'

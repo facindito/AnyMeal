@@ -11,7 +11,7 @@ export default function SearchForm({ onSubmit }) {
     setSearch(e.target.value)
   }
   return (
-    <form onSubmit={handleSubmit} className=''>
+    <form onSubmit={handleSubmit}>
       <div className='relative w-full'>
         <div className='absolute h-full left-0 p-2 flex items-center'>
           <svg xmlns='http://www.w3.org/2000/svg' height='24' width='24'>
@@ -21,7 +21,7 @@ export default function SearchForm({ onSubmit }) {
         <input
           type='search'
           placeholder='search any meal...'
-          className='p-2 border rounded-full pl-10 outline-none border-yellow-600 focus:ring-yellow-600 focus:ring-1'
+          className='text-yellow-900 p-2 border rounded-full pl-10 outline-none border-yellow-600 focus:ring-yellow-600 focus:ring-1'
           onChange={handleChange}
         />
       </div>

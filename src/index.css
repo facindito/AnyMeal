@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: Roboto, Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+
+@layer base {
+  html {
+    font-family: Inter, system-ui, sans-serif;
+    background-color: #252525;
+    color:#fefae8;
+    scroll-behavior: smooth;
+  }
 }

@@ -24,9 +24,6 @@ module.exports = {
         list: 'repeat(auto-fit, minmax(300px,1fr))',
       },
     },
-    fontFamily: {
-      lifesavers: ['Life Savers'],
-    },
   },
   plugins: [],
 }
