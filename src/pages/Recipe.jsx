@@ -6,7 +6,7 @@ export default function Recipe() {
   const { id } = useParams()
   const { meal } = useMealbById({ id })
   return (
-    <main className='min-h-screen  p-4 w-full'>
+    <main className='max-w-4xl mx-auto'>
       {meal && <Meal meal={meal.meal} />}
     </main>
   )

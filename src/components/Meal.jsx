@@ -1,6 +1,6 @@
 export default function Meal({ meal }) {
   return (
-    <article className='flex flex-col gap-8 p-4 border-2 border-yellow-400 rounded-md'>
+    <article className='flex flex-col gap-8 p-4'>
       <h1 className='text-3xl font-bold text-center md:text-5xl font-lifesavers text-yellow-400'>
         {meal.name}
       </h1>
