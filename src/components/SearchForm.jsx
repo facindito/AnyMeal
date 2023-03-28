@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 export default function SearchForm({ onSubmit }) {
-  const [search, setSearch] = useState(null)
+  const [search, setSearch] = useState('')
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -23,6 +23,7 @@ export default function SearchForm({ onSubmit }) {
           placeholder='search any meal...'
           className='text-yellow-900 p-2 border rounded-full pl-10 outline-none border-yellow-600 focus:ring-yellow-600 focus:ring-1'
           onChange={handleChange}
+          value={search}
         />
       </div>
     </form>
