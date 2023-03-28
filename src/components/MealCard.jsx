@@ -1,7 +1,9 @@
 export default function MealCard({ meal }) {
   return (
     <>
-      <h2 className='text-lg font-bold text-yellow-400'>{meal.name}</h2>
+      <h2 className='text-lg font-bold text-yellow-400 text-center'>
+        {meal.name}
+      </h2>
       <picture className='h-40 rounded-md overflow-hidden'>
         <img
           className='object-cover w-full h-full'
