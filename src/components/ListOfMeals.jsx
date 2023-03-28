@@ -3,7 +3,7 @@ import MealCard from './MealCard'
 
 export default function ListOfMeals({ meals }) {
   return (
-    <ul className='grid grid-cols-list gap-4 items-start'>
+    <ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 items-start'>
       {meals &&
         meals.map((meal) => (
           <li key={meal.id} className=''>

@@ -40,7 +40,9 @@ export default function Meal({ meal }) {
       </section>
       <section>
         <h2 className='mb-4 text-xl font-bold'>Instructions</h2>
-        <p className='whitespace-pre-wrap max-w-prose'>{meal.instructions}</p>
+        <div className='whitespace-pre-wrap max-w-prose'>
+          {meal.instructions}
+        </div>
       </section>
     </article>
   )
